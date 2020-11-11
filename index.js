@@ -8,8 +8,8 @@ largestSubarraySum = (array) => {
  for(let i=0; i<array.length; i++){
    for(let j=(i+1); j<array.length; j++){
      let selected = array.slice(i,(j+1))
-     const reducer = (accumulator, currentValue) => accumulator + currentValue
-     console.log(array.reduce(reducer))
+     const reducer = (accumulator, currentValue) => accumulator + currentValue,0
+     console.log(selected.reduce(reducer))
    }
  }
 }
