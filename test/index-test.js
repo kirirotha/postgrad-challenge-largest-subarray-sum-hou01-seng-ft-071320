@@ -45,5 +45,5 @@ describe('#largestSubarraySum', function() {
     let array = new Array(1000).fill(1); // should result in sum of 10000
     expect(largestSubarraySum(array)).toEqual(1000)
   });
-  
+
 });
