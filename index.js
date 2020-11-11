@@ -15,4 +15,3 @@ largestSubarraySum = (array) => {
 }
 
 largestSubarraySum(array)
-
