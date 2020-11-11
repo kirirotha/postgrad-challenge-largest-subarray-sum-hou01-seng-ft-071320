@@ -9,9 +9,13 @@ largestSubarraySum = (array) => {
    for(let j=(i+1); j<array.length; j++){
      let selected = array.slice(i,(j+1))
      const reducer = (accumulator, currentValue) => accumulator + currentValue
-     console.log(selected.reduce(reducer))
+     if(selected.reduce(reducer)){
+       largestSum = selected.reduce(reducer)
+      //  let solutionArray = array.slice(i,(j+1))
+     }
    }
  }
+ return largestSum
 }
 
 // largestSubarraySum(array)
